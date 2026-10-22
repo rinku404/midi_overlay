@@ -1,0 +1,34 @@
+{
+  "name": "EWI Staff",
+  "description": "Notes scroll across a treble staff and light up as they cross the playhead.",
+  "layout": "staff",
+  "panel": {
+    "anchor": "bottom",
+    "height": 330,
+    "background": "#0B0F1AB3",
+    "corner_radius": 28
+  },
+  "staff": {
+    "clef": "treble",
+    "line_spacing": 22,
+    "line_color": "#FFFFFFB0"
+  },
+  "scroll": {
+    "pixels_per_second": 320,
+    "playhead": 0.28
+  },
+  "notes": {
+    "color": "#7FD1FF",
+    "active_color": "#FFD86B",
+    "accidentals": "sharp",
+    "glow_radius": 9
+  },
+  "playhead": {
+    "active_color": "#FFD86B"
+  },
+  "label": {
+    "show": true,
+    "show_octave": true
+  },
+  "transpose": 0
+}
