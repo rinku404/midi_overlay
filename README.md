@@ -26,7 +26,16 @@ corner (for example `F♯4`).
    python -m midi_overlay render examples\ewi_demo.mid -o demo.mov
    ```
 
-## Everyday use
+## Quick start: the menu
+
+1. Put your `.mid` files in the `input` folder.
+2. Double-click `render.bat` (or run `python -m midi_overlay` with no options).
+3. Pick the file, track, theme and format from the numbered lists. Press Enter to accept a default.
+
+The video is saved in the `output` folder as `<file>_<theme>.mov` (or `.webm`, `.mp4`, or a folder of PNGs).
+Rendered files in `output` are not tracked by git.
+
+## Everyday use from the command line
 
 ```powershell
 # What is in the file: tracks, channels, note range, length
@@ -117,9 +126,13 @@ midi_overlay/        the program
   layouts/staff.py   the scrolling staff look
   sprites.py         anti-aliased note heads, glyphs and glows
   export.py          sends frames to ffmpeg
+  menu.py            the interactive menu
 themes/ewi-staff/    the EWI theme
 fonts/               Noto Music (SIL Open Font License, see fonts/OFL.txt)
 examples/            demo MIDI and the script that makes it
+input/               your .mid files for the menu
+output/              rendered videos (ignored by git)
+render.bat           double-click to open the menu
 ```
 
 ## Not done yet

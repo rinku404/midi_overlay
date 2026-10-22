@@ -77,6 +77,10 @@ def cmd_render(args):
 
 
 def main(argv=None):
+    if not (sys.argv[1:] if argv is None else argv):
+        from . import menu
+        menu.run()
+        return
     parser = argparse.ArgumentParser(prog="midi_overlay", description="Render MIDI notes as a video overlay.")
     sub = parser.add_subparsers(dest="command", required=True)
 
